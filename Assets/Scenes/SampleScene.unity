@@ -3418,7 +3418,7 @@ GameObject:
   - component: {fileID: 961421728}
   - component: {fileID: 961421727}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: WaterTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3639,6 +3639,7 @@ GameObject:
   - component: {fileID: 987846328}
   - component: {fileID: 987846330}
   - component: {fileID: 987846329}
+  - component: {fileID: 987846331}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3673,7 +3674,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d284d47d4524bd745b4c8b2caee9788c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4000
+  speed: 1500
   turnSmoothTime: 0.1
   cam: {fileID: 1540101493}
 --- !u!143 &987846330
@@ -3694,6 +3695,19 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &987846331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987846327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b419108e8f12f5a48841341805748941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentState: 0
 --- !u!1 &1014994614
 GameObject:
   m_ObjectHideFlags: 0
